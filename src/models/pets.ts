@@ -9,7 +9,7 @@ export class Pets extends Model<InferAttributes<Pets>, InferCreationAttributes<P
     declare updatedAt?: Date;
 }
 
-export function PetFactory(sequelize: Sequelize) {
+export function PetsFactory(sequelize: Sequelize) {
     Pets.init({
         petId: {
             type: DataTypes.INTEGER,
