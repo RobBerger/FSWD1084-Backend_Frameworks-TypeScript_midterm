@@ -1,5 +1,6 @@
-<h1>Add Pet</h1>
-<form action="/add/create" method="POST">
+<h1>Edit Pet</h1>
+{{#with foundPet}}
+<form action="/pets/edit/{{petId}}" method="POST">
     <label for="name">Name: </label>
     <imput type="text" name="name" placeholder="Enter Name" /><br>
 
@@ -9,5 +10,6 @@
     <label for="description">Description: </label>
     <imput type="text" name="description" placeholder="Description" /><br>
 
-    <button type="submit">Add Pet</button>
+    <button type="submit">Edit Pet</button>
 </form>
+{{/with}}
