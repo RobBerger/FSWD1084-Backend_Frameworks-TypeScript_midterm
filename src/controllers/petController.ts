@@ -7,7 +7,7 @@ export const petHome: RequestHandler = (req, res, next) => {
 
 export const allPets: RequestHandler = async (req, res, next) => {
     let petList: Pets[] = await Pets.findAll();
-    res.render('all-pets', {petList});
+    res.render('all-pets', { petList });
 }
 
 export const onePet: RequestHandler = async (req, res, next) => {
