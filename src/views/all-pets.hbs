@@ -1,0 +1,15 @@
+<h1>Look At All Of The Pets</h1>
+<ul>
+    {{#each petList}}
+    <li>
+        {{name}}
+        <a href="/pets/{{petId}}">View</a>
+        <a href="/pets/edit/{{petId}}">Edit</a>
+        <form action="/pets/delete/{{petId}}" method="POST">
+            <button type="submit">Delete</button>
+        </form>
+    </li>
+    {{/each}}
+</ul>
+
+<a href="/pets/add">Add Another Pet</a>
