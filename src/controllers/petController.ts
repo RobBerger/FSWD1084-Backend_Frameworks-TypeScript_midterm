@@ -5,12 +5,12 @@ export const petHome: RequestHandler = (req, res, next) => {
     res.redirect('/pets');
 }
 
-export const allPets: RequestHandler = (req, res, next) => {
-    let petList: Pets[] await Pets.findAll();
+export const allPets: RequestHandler = async (req, res, next) => {
+    let petList: Pets[] = await Pets.findAll();
     res.render('all-pets', {petList});
 }
 
-export const onePet: RequestHandler = (req, res, next) => {
+export const onePet: RequestHandler = async (req, res, next) => {
     let petId = req.params.petId;
     let petListing: Pets | null = await Pets.findByPk(petId);
     if (petListing) {

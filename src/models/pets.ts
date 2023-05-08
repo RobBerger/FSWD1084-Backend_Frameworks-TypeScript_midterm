@@ -40,7 +40,7 @@ export function PetsFactory(sequelize: Sequelize) {
             defaultValue: DataTypes.NOW,
         }
     }, {
-        tableName: 'pet',
+        tableName: 'pets',
         freezeTableName: true,
         sequelize
     });
