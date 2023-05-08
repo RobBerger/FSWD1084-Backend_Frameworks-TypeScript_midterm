@@ -14,6 +14,6 @@ router.post('/new', newPet);
 router.get('/edit/:petId', editPetPage);
 router.post('/edit/:petId', editPet);
 router.post('/delete/:petId', deletePet);
-router.get(':petId', onePet);
+router.get('/:petId', onePet);
 
 export default router;
