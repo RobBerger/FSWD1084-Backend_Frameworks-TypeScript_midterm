@@ -2,13 +2,13 @@
 {{#with foundPet}}
 <form action="/pets/edit/{{petId}}" method="POST">
     <label for="name">Name: </label>
-    <imput type="text" name="name" placeholder="Enter Name" value="{{name}}" /><br>
+    <input type="text" name="name" placeholder="Enter Name" value="{{name}}" /><br>
 
     <label for="imgUrl">Image: </label>
-    <imput type="text" name="imgUrl" placeholder="Enter Image URL" value="{{imgUrl}}" /><br>
+    <input type="text" name="imgUrl" placeholder="Enter Image URL" value="{{imgUrl}}" /><br>
 
     <label for="description">Description: </label>
-    <imput type="text" name="description" placeholder="Description" value="{{description}}" /><br>
+    <input type="text" name="description" placeholder="Description" value="{{description}}" /><br>
 
     <button type="submit">Edit Pet</button>
 </form>
