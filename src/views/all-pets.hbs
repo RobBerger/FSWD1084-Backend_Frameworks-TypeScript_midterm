@@ -3,6 +3,7 @@
     {{#each petList}}
     <li>
         {{name}}
+        <img src="{{imgUrl}}">
         <a href="/pets/{{petId}}">View</a>
         <a href="/pets/edit/{{petId}}">Edit</a>
         <form action="/pets/delete/{{petId}}" method="POST">
